@@ -1,0 +1,258 @@
+@import url(reset.css);
+
+/*Шрифты*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic-ext,cyrillic);
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    color: black;
+}
+
+#side-bar-top{
+    display: block;
+    height: 43px;
+    background: #252223;
+    color: white;
+    font-size: 13px;
+    line-height: 43px;
+    padding: 0 ;
+}
+
+.side-bar-info{
+    min-width: 768px;
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 43px;
+    padding: 0 3px;
+}
+
+#tel-sb{
+    font-weight: 600;
+}
+
+#address-side-bar{
+    float: right;  
+}
+
+#telephone-side-bar{
+    float: left;
+}
+
+
+#header{
+    min-width: 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 75px;
+    padding-top: 10px;
+}
+
+#logo{
+    background: white;
+    float: left;
+    padding: 0;
+    height: 75px;
+    width: 75px;
+}
+
+#logo img{
+    width: 75px;
+    height: 75px;
+}
+
+#navigation{
+    height: 75px;
+    background: white;
+    float: right;
+}
+
+.menu-item-list{
+    float: left;
+}
+
+.glyphicon{
+    font-size: 10px;
+}
+
+.menu-ref{
+    padding: 0 15px;
+    text-transform: uppercase ;
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 75px;
+    color: black;
+    text-decoration: none;
+}
+
+.shopping-cart-icon{
+    float: right;
+    margin: 21.5px 0;
+}
+
+.dropdown-menu{
+    display: block;
+    opacity: 0;
+    top: -9999em;
+}
+
+.dropdown:hover > .dropdown-menu { 
+    display: block; 
+    opacity: 1;
+    width: 200px;
+    top: 60px;
+    transition: 0.5s opacity;
+} 
+
+.dropdown:hover .glyphicon-chevron-down{
+    transition: 0.5s;
+    transform: scaleY(-1);
+}
+
+
+.menu-ref:hover{ 
+    transition: 0.4s;
+    text-decoration: none;
+    color: black;
+} 
+
+.open > .dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu > li > a {
+    display: inline-block;
+    padding: 3px 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    border-bottom: 2px solid white ;
+    transition: 0.3s; /*плавные переходы*/
+}
+
+.dropdown-menu > li:first-child{
+    margin-top: 20px;
+}
+
+.dropdown-menu > li:last-child{
+    margin-bottom: 20px;
+}
+
+.dropdown-menu > li > a:hover {
+    background: white;
+    border-bottom: 2px solid black;
+}
+
+.carousel{
+    margin-top: 20px;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-control.right, .carousel-control.left{
+    background-image: none; /*убираем градиент на стрелках влево/вправо*/
+}
+
+.item{
+    width: 100%;
+    height: 400px;
+}
+
+.slide-info a{
+    position: absolute;
+    height: 75px;
+    width: 200px;
+    text-align: center;
+    line-height: 75px;
+    background-color: white;
+    color: black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+}
+
+.slide-info a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+
+#slide-1{
+    background-size: cover;/*Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.*/
+    background-image: url(../images/slide-item-1.jpg);
+    background-position: center;    
+}
+
+#slide-2{
+    background-size: cover;/*Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.*/
+    background-image: url(../images/slide-item-2.jpg);
+    background-position: center;    
+}
+
+#slide-3{
+    background-size: cover;/*Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.*/
+    background-image: url(../images/slide-item-3.jpg);
+    background-position: center;    
+}
+
+#slide-4{
+    background-size: cover;/*Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.*/
+    background-image: url(../images/slide-item-4.jpg);
+    background-position: center;    
+}
+
+#slide-chevron-left{
+    left: 30px;    
+}
+#slide-chevron-right{
+    right: 30px;    
+}
+
+.slide-chevron{
+    display: block;
+    position: absolute;
+    color: #fff;
+    opacity: 0.8;
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+    line-height: 1;
+    top: 50%;
+    margin-top: -32px;
+    -webkit-transition: all .3s;
+}
+
+
+@media (max-width:1200px) {
+    #header{
+        margin: 0;    
+        width: 100%;
+    }
+}
+
+@media (max-width:1024px) {
+    .menu-ref{
+        display: none;
+    }
+    
+    #navigation{
+        margin-left: 75px; 
+        position: absolute;
+        padding: 0;
+    }
+}
+
+
+
